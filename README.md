@@ -24,14 +24,18 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Technical Requirement: Fetching and Rendering GitHub User Data
 
-### Associate Full Stack Engineer
+Your assignment involves fetching user data from the GitHub API and rendering this information on the page. Additionally, you are required to create a user detail page that shows detailed information about a selected user, including 10 of their repositories, followers and organizations. This exercise serves as a practical assessment of your ability to interact with external APIs, present data in a client application, and implement detailed user views. Good luck with your task!
 
-For the Associate Full Stack Engineer position the assignment involves fetching user data from the GitHub API: `https://api.github.com/users` and rendering this information on the page. This exercise serves as a practical assessment of your ability to interact with external APIs and present data in a client application. Best of luck with your task!
+Please note: GitHub has a rate limit for its API. To ensure a smooth experience during the technical interview, we encourage you to create a personal access token. You can find detailed instructions on how to create and manage your personal access token [https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens](here). This will help you avoid any potential rate-limiting issues and ensure you can fully showcase your skills. Good luck!
 
-### Full Stack Engineer
+### Endpoints
 
-For the Full Stack Engineer position, in addition to the Associate Full Stack Engineer task, we require you to implement a search functionality using the GitHub API: `https://api.github.com/search/users?q=${user}`. This extension aims to further evaluate your capabilities in handling dynamic data and enhancing user interactions. Good luck with this enhanced task!
+`https://api.github.com/users`
+`https://api.github.com/users/${user}`
+`https://api.github.com/search/users?q=${user}`
 
-### Senior Full Stack Engineer
+## Notes
 
-For the Senior Full Stack Engineer position, we have an additional challenge for you. Your task is to utilize Prisma to model the GitHub user data and showcase your basic CRUD (Create, Read, Update, Delete) knowledge. This will provide us with insights into your proficiency in database modeling and operations. Good luck, and we look forward to seeing your skills in action!
+Feel free to leverage your preferred method for data fetching—whether it's `SWR`, `TanStack Query`, or, for the daring and adventurous, diving into the world of `React Server Components`. Your comfort and expertise are paramount in showcasing your skills during this task.
+
+Remember to enjoy the process and have fun! Life's too short to be too serious—let your creativity shine and make the most out of this coding adventure. Happy coding!
