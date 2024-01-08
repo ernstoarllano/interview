@@ -1,3 +1,3 @@
 export default function Home() {
-  return <div></div>
+  return <div className="p-8 space-y-16"></div>
 }

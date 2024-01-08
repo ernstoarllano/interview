@@ -1,8 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dispel Technical Interview
+
+Welcome to the Dispel Technical Interview! This assessment is thoughtfully designed to evaluate candidates' technical proficiency, problem-solving skills, and suitability for various roles within Dispel. As a candidate, you can anticipate engaging in a series of challenges, coding exercises, and discussions that will assess your knowledge of relevant technologies, coding practices, and problem-solving methodologies.
+
+## What to Expect
+
+The interview process is carefully crafted to identify individuals who not only possess a deep understanding of technical concepts but also demonstrate the ability to apply these skills in real-world scenarios. Successful candidates will showcase a robust foundation in coding, effective problem-solving strategies, and the capacity to contribute meaningfully to Dispel's technical initiatives.
 
 ## Getting Started
 
-First, run the development server:
+To begin, run the development server using one of the following commands based on your preference:
 
 ```bash
 npm run dev
@@ -16,21 +22,16 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technical Requirement: Fetching and Rendering GitHub User Data
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Associate Full Stack Engineer
 
-## Learn More
+For the Associate Full Stack Engineer position the assignment involves fetching user data from the GitHub API: `https://api.github.com/users` and rendering this information on the page. This exercise serves as a practical assessment of your ability to interact with external APIs and present data in a client application. Best of luck with your task!
 
-To learn more about Next.js, take a look at the following resources:
+### Full Stack Engineer
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+For the Full Stack Engineer position, in addition to the Associate Full Stack Engineer task, we require you to implement a search functionality using the GitHub API: `https://api.github.com/search/users?q=${user}`. This extension aims to further evaluate your capabilities in handling dynamic data and enhancing user interactions. Good luck with this enhanced task!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Senior Full Stack Engineer
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+For the Senior Full Stack Engineer position, we have an additional challenge for you. Your task is to utilize Prisma to model the GitHub user data and showcase your basic CRUD (Create, Read, Update, Delete) knowledge. This will provide us with insights into your proficiency in database modeling and operations. Good luck, and we look forward to seeing your skills in action!
