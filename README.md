@@ -30,9 +30,9 @@ Please note: GitHub has a rate limit for its API. To ensure a smooth experience 
 
 ### Endpoints
 
-`https://api.github.com/users`
-`https://api.github.com/users/${user}`
-`https://api.github.com/search/users?q=${user}`
+- `https://api.github.com/users`
+- `https://api.github.com/users/${user}`
+- `https://api.github.com/search/users?q=${user}`
 
 ## Notes
 
