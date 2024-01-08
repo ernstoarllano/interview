@@ -26,7 +26,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Your assignment involves fetching user data from the GitHub API and rendering this information on the page. Additionally, you are required to create a user detail page that shows detailed information about a selected user, including 10 of their repositories, followers and organizations. This exercise serves as a practical assessment of your ability to interact with external APIs, present data in a client application, and implement detailed user views. Good luck with your task!
 
-Please note: GitHub has a rate limit for its API. To ensure a smooth experience during the technical interview, we encourage you to create a personal access token. You can find detailed instructions on how to create and manage your personal access token [https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens](here). This will help you avoid any potential rate-limiting issues and ensure you can fully showcase your skills. Good luck!
+Please note: GitHub has a rate limit for its API. To ensure a smooth experience during the technical interview, we encourage you to create a personal access token. You can find detailed instructions on how to create and manage your personal access token [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). This will help you avoid any potential rate-limiting issues and ensure you can fully showcase your skills. Good luck!
 
 ### Endpoints
 
