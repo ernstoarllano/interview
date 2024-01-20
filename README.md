@@ -28,6 +28,11 @@ Your assignment involves fetching user data from the GitHub API and rendering th
 
 Please note: GitHub has a rate limit for its API. To ensure a smooth experience during the technical interview, we encourage you to create a personal access token. You can find detailed instructions on how to create and manage your personal access token [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). This will help you avoid any potential rate-limiting issues and ensure you can fully showcase your skills. Good luck!
 
+### Requirements
+
+- Create a list of users that displays the users avatar and name, also include a link to a user detail page.
+- Create a user detail page that displays the users avater and name, also include five followers and five organizations along with 10 repos.
+
 ### Endpoints
 
 [API Docs](https://docs.github.com/en/rest/users/users?apiVersion=2022-11-28)
