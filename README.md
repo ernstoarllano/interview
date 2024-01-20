@@ -30,8 +30,12 @@ Please note: GitHub has a rate limit for its API. To ensure a smooth experience 
 
 ### Endpoints
 
+[API Docs](https://docs.github.com/en/rest/users/users?apiVersion=2022-11-28)
+
 - `https://api.github.com/users`
 - `https://api.github.com/users/${user}`
+- `https://api.github.com/users/${user}/followers`
+- `https://api.github.com/users/${user}/orgs`
 - `https://api.github.com/search/users?q=${user}`
 
 ## Notes
