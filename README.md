@@ -41,6 +41,7 @@ Please note: GitHub has a rate limit for its API. To ensure a smooth experience 
 - `https://api.github.com/users/${user}`
 - `https://api.github.com/users/${user}/followers`
 - `https://api.github.com/users/${user}/orgs`
+- `https://api.github.com/users/${user}/repos`
 - `https://api.github.com/search/users?q=${user}`
 
 ## Notes
