@@ -44,6 +44,13 @@ Please note: GitHub has a rate limit for its API. To ensure a smooth experience 
 - `https://api.github.com/users/${user}/repos`
 - `https://api.github.com/search/users?q=${user}`
 
+### Documentation
+
+- https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating
+- https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes
+- https://nextjs.org/docs/app/building-your-application/data-fetching/patterns
+- https://nextjs.org/docs/app/building-your-application/rendering
+
 ## Notes
 
 Feel free to leverage your preferred method for data fetching—whether it's `SWR`, `TanStack Query`, or, for the daring and adventurous, diving into the world of `React Server Components`. Your comfort and expertise are paramount in showcasing your skills during this task.
