@@ -29,15 +29,25 @@ Your assignment is to build a simple blog application using Next.js, Prisma, and
   - For each post, show:
     - Title
     - Short content preview
+    - Author name
     - Link to the full post
 
 - **Blog Detail Page:**
+
   - Display the full blog post content
   - Show:
     - Title
     - Full content
+    - Author information
     - Creation date
   - Include a way to navigate back to the home page
+
+- **Data Modeling:**
+  - Implement a relationship between Users and Posts
+  - Each post must be associated with an author (User)
+  - Design the schema to support:
+    - Post creation and management
+    - Author attribution
 
 ### Technical Stack
 
@@ -49,7 +59,12 @@ Your assignment is to build a simple blog application using Next.js, Prisma, and
 
 ### Database Setup
 
-The project includes a PostgreSQL database running in Docker. The Prisma schema is set up with a basic `Post` model. You can expand this schema as needed for your implementation.
+The project includes a PostgreSQL database running in Docker. The Prisma schema is set up with a basic `Post` model. You'll need to:
+
+1. Design and implement the User model
+2. Establish the relationship between Users and Posts
+3. Create appropriate migrations
+4. Update the application to handle the user-post relationship
 
 ```bash
 # Start the database
