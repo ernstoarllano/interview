@@ -8,51 +8,69 @@ The interview process is carefully crafted to identify individuals who not only 
 
 ## Getting Started
 
-To begin, run the development server using one of the following commands based on your preference:
+To begin, start the database and run the development server:
 
 ```bash
-npm run dev
-# or
+yarn db:up
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Technical Requirement: Fetching and Rendering GitHub User Data
+## Technical Requirement: Simple Blog Application
 
-Your assignment involves fetching user data from the GitHub API and rendering this information on the page. Additionally, you are required to create a user detail page that shows detailed information about a selected user, including 10 of their repositories, followers and organizations. This exercise serves as a practical assessment of your ability to interact with external APIs, present data in a client application, and implement detailed user views. Good luck with your task!
-
-Please note: GitHub has a rate limit for its API. To ensure a smooth experience during the technical interview, we encourage you to create a personal access token. You can find detailed instructions on how to create and manage your personal access token [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). This will help you avoid any potential rate-limiting issues and ensure you can fully showcase your skills. Good luck!
+Your assignment is to build a simple blog application using Next.js, Prisma, and PostgreSQL. The blog should allow users to view a list of blog posts and click into each post to see its details.
 
 ### Requirements
 
-- Create a list of users that displays the users avatar and name, also include a link to a user detail page.
-- Create a user detail page that displays the users avater and name, also include five followers and five organizations along with 10 repos.
+- **Home Page:**
 
-### Endpoints
+  - Display a list of the 5 most recent blog posts
+  - For each post, show:
+    - Title
+    - Short content preview
+    - Link to the full post
 
-[API Docs](https://docs.github.com/en/rest/users/users?apiVersion=2022-11-28)
+- **Blog Detail Page:**
+  - Display the full blog post content
+  - Show:
+    - Title
+    - Full content
+    - Creation date
+  - Include a way to navigate back to the home page
 
-- `https://api.github.com/users`
-- `https://api.github.com/users/${user}`
-- `https://api.github.com/users/${user}/followers`
-- `https://api.github.com/users/${user}/orgs`
-- `https://api.github.com/users/${user}/repos`
-- `https://api.github.com/search/users?q=${user}`
+### Technical Stack
+
+- Next.js (App Router)
+- Prisma (PostgreSQL)
+- TypeScript
+- Tailwind CSS
+- Shadcn UI (optional, for consistent styling)
+
+### Database Setup
+
+The project includes a PostgreSQL database running in Docker. The Prisma schema is set up with a basic `Post` model. You can expand this schema as needed for your implementation.
+
+```bash
+# Start the database
+yarn db:up
+
+# Run migrations (after editing the Prisma schema)
+npx prisma migrate dev --name <migration-name>
+
+# Open Prisma Studio to view/edit data
+npx prisma studio
+```
 
 ### Documentation
 
-- https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating
-- https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes
-- https://nextjs.org/docs/app/building-your-application/data-fetching/patterns
-- https://nextjs.org/docs/app/building-your-application/rendering
+- [Next.js App Router](https://nextjs.org/docs/app/getting-started)
+- [Prisma Documentation](https://www.prisma.io/docs)
+- [Tailwind CSS](https://tailwindcss.com/docs)
+- [Shadcn UI](https://ui.shadcn.com/)
 
 ## Notes
 
-Feel free to leverage your preferred method for data fetching—whether it's `SWR`, `TanStack Query`, or, for the daring and adventurous, diving into the world of `React Server Components`. Your comfort and expertise are paramount in showcasing your skills during this task.
+Feel free to leverage your preferred method for data fetching—whether it's `TanStack Query`, `React Server Components`, or another approach. Your comfort and expertise are paramount in showcasing your skills during this task.
 
 Remember to enjoy the process and have fun! Life's too short to be too serious—let your creativity shine and make the most out of this coding adventure. Happy coding!
