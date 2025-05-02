@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: interview_db
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: dispel
+      POSTGRES_PASSWORD: engineering
+      POSTGRES_DB: interview
+    volumes:
+      - interview_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U interview"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  interview_data:
